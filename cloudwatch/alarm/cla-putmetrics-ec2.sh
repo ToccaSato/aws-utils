@@ -20,7 +20,7 @@ done
 
 # EBSボリュームのデバイス名とファイルシステムタイプを取得
 read -rp "EBSボリュームのデバイス名(デフォルト: xvda1): " device_name
-device_name=${device_name:-xvda}
+device_name=${device_name:-xvda1}
 
 read -rp "EBSボリュームのファイルシステムタイプ(デフォルト: xfs): " fs_type
 fs_type=${fs_type:-xfs}
