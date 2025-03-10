@@ -126,7 +126,7 @@ for metric in "${!metrics[@]}"; do
         --dimensions "${dimensions[@]}" \
         --period 60 \
         --threshold "$threshold" \
-        --comparison-operator "GreaterThanThreshold" \
+        --comparison-operator "GreaterThanOrEqualToThreshold" \
         --evaluation-periods 1 \
         --alarm-actions "$sns_topic_arn" \
         --ok-actions "$sns_topic_arn" \
